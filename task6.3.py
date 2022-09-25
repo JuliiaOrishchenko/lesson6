@@ -1,13 +1,9 @@
-original_list = []
+original_list = list(range(1, 101))
 final_list = []
-counter = 0
-counter2 = 0
-while counter < 100:
-    counter += 1
-    original_list.append(counter)
+index = 0
 
-while counter2 < 100:
-    if original_list[counter2] % 7 == 0 and original_list[counter2] % 5 != 0:
-        final_list.append(original_list[counter2])
-    counter2 += 1
+while original_list[index] < 100:
+    if original_list[index] % 7 == 0 and original_list[index] % 5 != 0:
+        final_list.append(original_list[index])
+    index += 1
 print(final_list)
